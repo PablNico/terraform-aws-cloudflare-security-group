@@ -53,11 +53,13 @@ No modules.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_enabled"></a> [enabled](#input\_enabled) | Whether to do anything at all, useful if cloudflare is not needed on all environments. Accepts the string 'true' or 'false'. | `string` | `"true"` | no |
-| <a name="input_schedule_expression"></a> [schedule\_expression](#input\_schedule\_expression) | The cloudwatch schedule expression used to run the updater lambda. | `string` | `"cron(0 20 * * ? *)"` | no |
-| <a name="input_security_group_id"></a> [security\_group\_id](#input\_security\_group\_id) | An existing security group to populate with cloudflare ips as ingress rules. | `any` | n/a | yes |
+| Name                                                                                          | Description | Type           | Default               | Required |
+|-----------------------------------------------------------------------------------------------|-------------|----------------|-----------------------|:--------:|
+| <a name="input_enabled"></a> [enabled](#input\_enabled)                                       | Whether to do anything at all, useful if cloudflare is not needed on all environments. Accepts the string 'true' or 'false'. | `string`       | `"true"`              | no |
+| <a name="input_enabled"></a> [multiple\_region\_enabled](#input\_enabled)                     | Check whether or not resources will be created in multiple regions. | `bool`         | `false`               | no |
+| <a name="input_enabled"></a> [multiple\_region\_list](#input\_enabled)                        | List for the multiple region setup. | `list(string)` | `[]`                  | no |
+| <a name="input_schedule_expression"></a> [schedule\_expression](#input\_schedule\_expression) | The cloudwatch schedule expression used to run the updater lambda. | `string`       | `"cron(0 20 * * ? *)"` | no |
+| <a name="input_security_group_id"></a> [security\_group\_id](#input\_security\_group\_id)     | An existing security group to populate with cloudflare ips as ingress rules. | `any`          | n/a                   | yes |
 
 ## Outputs
 
