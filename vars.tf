@@ -6,7 +6,7 @@ variable "enabled" {
   default     = "true"
 }
 variable "multiple_region_enabled" {
-  description = "Check whether or not resources will be created in multiple regions."
+  description = "Check whether resources will be created in multiple regions."
   default     = false
 }
 variable "multiple_region_list" {
