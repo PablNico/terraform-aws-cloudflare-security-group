@@ -72,3 +72,6 @@ Variables
 * schedule_expression: The cloudwatch schedule expression used to run the updater lambda. Defaults to every day at 20:00.
 * enabled (Optional) - whether to do anything at all, useful if cloudflare is not needed on all environments. 
 Accepts the string "true" or "false". Defaults to "true"
+* multiple_region_enabled (Optional) - Check whether resources will be created in multiple regions.
+* multiple_region_list (Optional) - List for the multiple region setup.
+
